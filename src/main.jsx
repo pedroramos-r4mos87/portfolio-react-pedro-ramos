@@ -146,7 +146,7 @@ const content = {
         description:
         "Projeto de pesquisa em IA para classificação de notícias em português, utilizando modelos de linguagem, métricas de avaliação e explicabilidade.",
         tags: ["Python", "NLP", "BERT", "Machine Learning", "XAI"],
-        link:`${import.meta.env.BASE_URL}documents/tcc-final-version.pdf`,
+        link:`${import.meta.env.BASE_URL}public/documents/tcc-final-version.pdf`,
         status: "completed",
         linkLabel: "Ver pesquisa",
       },
@@ -297,7 +297,7 @@ const content = {
         description:
           "Artificial intelligence research project focused on Portuguese fake news classification using language models, evaluation metrics, cross-domain analysis, and explainability techniques.",
         tags: ["Python", "NLP", "BERT", "Machine Learning", "XAI"],
-        link:`${import.meta.env.BASE_URL}documents/tcc-final-version.pdf`,
+        link:`${import.meta.env.BASE_URL}public/documents/tcc-final-version.pdf`,
         status: "completed",
         linkLabel: "View research",
       },
