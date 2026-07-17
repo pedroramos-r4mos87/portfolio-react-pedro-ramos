@@ -1457,76 +1457,63 @@ footer a {
   .experienceGrid {
     grid-template-columns: 1fr;
   }
+.topBar,
+.topBar.topBarScrolled,
+.topBar.topBarScrolled:hover {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: auto;
 
-  .topBar,
-  .topBar.topBarScrolled,
-  .topBar.topBarScrolled:hover {
-    top: 0;
-    right: 0;
-    left: auto;
+  width: 100%;
+  height: auto;
 
-    width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(24, 32, 27, 0.08);
+  border-radius: 0;
 
-    transform: none;
-  }
+  background: rgba(246, 242, 234, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 
-  .topBarInner,
-  .topBar.topBarScrolled .topBarInner {
-    width: min(100% - 24px, 680px);
-    min-height: auto;
-    margin: 0 auto;
+  box-shadow: none;
+  transform: none;
+}
 
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    justify-content: space-between;
+.topBarInner,
+.topBar.topBarScrolled .topBarInner {
+  width: calc(100% - 32px);
+  min-height: 68px;
+  margin: 0 auto;
+  padding: 10px 0;
 
-    padding: 12px 0;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .topBar.topBarScrolled .navLinks,
-  .navLinks {
-    grid-column: 1 / -1;
+.topBar .brandMark {
+  width: 46px;
+  height: 46px;
+}
 
-    width: 100%;
+.topBar .navLinks,
+.topBar.topBarScrolled .navLinks {
+  display: none;
+}
 
-    flex-direction: row;
-    justify-content: flex-start;
+.topBar .languageToggle,
+.topBar.topBarScrolled .languageToggle,
+.topBar.topBarScrolled:hover .languageToggle {
+  display: inline-flex;
+  max-height: none;
+  margin: 0;
 
-    overflow-x: auto;
-
-    padding-bottom: 3px;
-  }
-
-  .topBar.topBarScrolled .navLinks a,
-  .topBar.topBarScrolled:hover .navLinks a {
-    width: auto;
-    height: auto;
-
-    justify-content: flex-start;
-
-    padding: 8px 0;
-
-    background: transparent;
-    color: #526057;
-  }
-
-  .topBar.topBarScrolled .navLinks a.active {
-    color: #196f5a;
-  }
-
-  .topBar.topBarScrolled .navLabel {
-    position: static;
-
-    opacity: 1;
-
-    transform: none;
-  }
-
-  .topBar.topBarScrolled .languageToggle {
-    display: inline-flex;
-  }
-
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+}
   main{
     padding-top: 0;
   }
