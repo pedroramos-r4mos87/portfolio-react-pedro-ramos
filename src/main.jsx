@@ -65,6 +65,12 @@ const content = {
       viewProject: "Ver projeto",
     },
 
+    projectStatus:{
+      completed: "Concluído",
+      inProgress: "Em desenvolvimento",
+      earlyStage: "Fase inicial",
+    },
+
     skillsSection: {
       kicker: "Skills",
       title: "Ferramentas que uso no dia a dia",
@@ -120,46 +126,45 @@ const content = {
 
     projects: [
       {
+        title: "DCER - Connect",
+        description:
+          "Site informativo para organização cristã, estruturando conteúdos, identidade visual, informações institucionais e comunicação com o público.",
+        tags: ["React", "Content", "Responsive Design", "UI"],
+        link: "https://github.com/pedroramos-r4mos87/embaixadores-do-rei-ms",
+        status: "inProgress",
+      },
+      {
         title: "Pés no Arado Check-in System",
         description:
           "Sistema de check-in para eventos, com interface web simples e backend em .NET para gerenciamento de participantes e validação de entradas.",
         tags: ["C#", ".NET", "HTML", "CSS", "REST API"],
-        link: "#",
+        link: "https://github.com/RohpCompany/PesNoArado.API",
+        status: "completed",
+      },
+      {
+        title: "Fake News Classification with BERTimbau",
+        description:
+        "Projeto de pesquisa em IA para classificação de notícias em português, utilizando modelos de linguagem, métricas de avaliação e explicabilidade.",
+        tags: ["Python", "NLP", "BERT", "Machine Learning", "XAI"],
+        link: "/documents/tcc-final-version.pdf",
+        status: "completed",
+        linkLabel: "Ver pesquisa",
+      },
+      {
+        title: "Povos em Foco",
+        description:
+          "Plataforma para consulta e exploração de dados sobre povos, regiões, culturas e religiões ao redor do mundo, integrando informações de APIs externas em uma experiência visual, organizada e acessível.",
+        tags: ["C#", ".NET", "REST API", "External APIs", "PostgreSQL"],
+        link: "https://github.com/pedroramos-r4mos87/povos-em-foco",
+        status: "earlyStage",
       },
       {
         title: "Ateliê Quiriquiqui do Campo",
         description:
           "Site institucional para um ateliê criativo, com foco em apresentação de marca, catálogo visual e contato direto com clientes.",
         tags: ["React", "CSS", "Landing Page", "UI Design"],
-        link: "#",
-      },
-      {
-        title: "Embaixadores do Rei Website",
-        description:
-          "Site informativo para organização cristã, estruturando conteúdos, identidade visual, informações institucionais e comunicação com o público.",
-        tags: ["React", "Content", "Responsive Design", "UI"],
-        link: "#",
-      },
-      {
-        title: "Fake News Classification with BERTimbau",
-        description:
-          "Projeto de pesquisa em IA para classificação de notícias em português, utilizando modelos de linguagem, métricas de avaliação e explicabilidade.",
-        tags: ["Python", "NLP", "BERT", "Machine Learning", "XAI"],
-        link: "#",
-      },
-      {
-        title: "Brazil Data Explorer",
-        description:
-          "Aplicação para consulta de dados públicos brasileiros, como CEP, CNPJ e bancos, usando APIs externas.",
-        tags: ["React", "API Integration", "BrasilAPI"],
-        link: "#",
-      },
-      {
-        title: "EventFlow",
-        description:
-          "Sistema genérico para inscrição, gerenciamento e check-in de participantes em eventos.",
-        tags: ["React", ".NET", "PostgreSQL", "Dashboard"],
-        link: "#",
+        link: "https://github.com/pedroramos-r4mos87/atelie-quiriquiqui-do-campo",
+        status: "inProgress",
       },
     ],
   },
@@ -210,6 +215,11 @@ const content = {
       kicker: "Projects",
       title: "Featured work",
       viewProject: "View project",
+    },
+    projectStatus:{
+      completed: "Completed",
+      inProgress: "In progress",
+      earlyStage: "Early stage",
     },
 
     skillsSection: {
@@ -267,46 +277,45 @@ const content = {
 
     projects: [
       {
+        title: "DCER Connect",
+        description:
+          "Digital platform for a Christian organization, designed to centralize content, institutional information, events, resources, and communication with its community.",
+        tags: ["React", ".NET", "PostgreSQL", "Responsive Design"],
+        link: "https://github.com/pedroramos-r4mos87/embaixadores-do-rei-ms",
+        status: "inProgress",
+      },
+      {
         title: "Pés no Arado Check-in System",
         description:
-          "Event check-in system with a simple web interface and a .NET backend for participant management and entry validation.",
+          "Event check-in system with a simple web interface and a .NET backend for participant management, registration tracking, and entry validation.",
         tags: ["C#", ".NET", "HTML", "CSS", "REST API"],
-        link: "#",
-      },
-      {
-        title: "Ateliê Quiriquiqui do Campo",
-        description:
-          "Institutional website for a creative atelier, focused on brand presentation, visual catalog, and direct customer contact.",
-        tags: ["React", "CSS", "Landing Page", "UI Design"],
-        link: "#",
-      },
-      {
-        title: "DCER - Connect",
-        description:
-          "Informational website for a Christian organization, structuring content, visual identity, institutional information, and public communication.",
-        tags: ["React", "Content", "Responsive Design", "UI"],
-        link: "#",
+        link: "https://github.com/RohpCompany/PesNoArado.API",
+        status: "completed",
       },
       {
         title: "Fake News Classification with BERTimbau",
         description:
-          "AI research project for Portuguese fake news classification using language models, evaluation metrics, and explainability.",
+          "Artificial intelligence research project focused on Portuguese fake news classification using language models, evaluation metrics, cross-domain analysis, and explainability techniques.",
         tags: ["Python", "NLP", "BERT", "Machine Learning", "XAI"],
-        link: "#",
+        link: "/documents/tcc-final-version.pdf",
+        status: "completed",
+        linkLabel: "View research",
       },
       {
-        title: "Brazil Data Explorer",
+        title: "Povos em Foco",
         description:
-          "Application for searching Brazilian public data such as ZIP codes, company records, and banks using external APIs.",
-        tags: ["React", "API Integration", "BrasilAPI"],
-        link: "#",
+          "Platform for exploring data about peoples, regions, cultures, and religions around the world, integrating external APIs into an organized, accessible, and visual experience.",
+        tags: ["C#", ".NET", "REST API", "External APIs", "PostgreSQL"],
+        link: "https://github.com/pedroramos-r4mos87/povos-em-foco",
+        status: "earlyStage",
       },
       {
-        title: "EventFlow",
+        title: "Ateliê Quiriquiqui do Campo",
         description:
-          "Generic system for event registration, participant management, and check-in tracking.",
-        tags: ["React", ".NET", "PostgreSQL", "Dashboard"],
-        link: "#",
+          "Institutional website for a creative atelier, focused on brand presentation, visual identity, product showcases, and direct customer contact.",
+        tags: ["React", "CSS", "Landing Page", "UI Design"],
+        link: "https://github.com/pedroramos-r4mos87/atelie-quiriquiqui-do-campo",
+        status: "inProgress",
       },
     ],
   },
@@ -655,6 +664,9 @@ function toggleLanguage() {
               ? "Projeto em destaque"
               : "Featured project"}
           </p>
+          <span className={`projectStatus ${data.projects[0].status}`}>
+            {data.projectStatus[data.projects[0].status]}
+          </span>
 
           <h3>{data.projects[0].title}</h3>
 
@@ -680,6 +692,10 @@ function toggleLanguage() {
       <div className="projectGrid">
         {data.projects.slice(1).map((project) => (
           <article className="projectCard" key={project.title}>
+            <span className={`projectStatus ${project.status}`}>
+              {data.projectStatus[project.status]}
+            </span>
+
             <div>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
